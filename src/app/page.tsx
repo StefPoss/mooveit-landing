@@ -1,5 +1,11 @@
 import Image from "next/image"
-import { SiNextdotjs, SiTypescript, SiReact, SiVercel, SiTailwindcss } from "react-icons/si"
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiReact,
+  SiVercel,
+  SiTailwindcss,
+} from "react-icons/si"
 
 export default function Home() {
   return (
@@ -46,42 +52,49 @@ export default function Home() {
       </div>
 
       {/* Footer sticky, icons wrap, couleur #b6b6b6 */}
-      <footer className="w-full flex flex-col items-center gap-2 pb-3">
-  {/* Footer infos équipe */}
-  <div className="bg-[#483a7c]/90 rounded-xl px-4 py-2 text-xs text-white text-center shadow">
-    Made with <span className="text-pink-400">💗</span> by Team #165<br />
-    © 2025 Amel, Nico, Sami, Sofiane, Stéphane<br />
-    <a
-      href="mailto:contact@mooveit.ovh"
-      className="underline hover:text-blue-400"
-    >
-      contact@mooveit.ovh
-    </a>
-  </div>
-  {/* Footer technos */}
-  <div className="bg-[#332961]/90 rounded-xl px-4 py-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-[#b6b6b6] shadow mt-6">
-    <span className="flex items-center gap-1">
-      <SiNextdotjs size={16} className="text-[#b6b6b6]" />
-      Next.js
-    </span>
-    <span className="flex items-center gap-1">
-      <SiTypescript size={16} className="text-[#b6b6b6]" />
-      TypeScript
-    </span>
-    <span className="flex items-center gap-1">
-      <SiReact size={16} className="text-[#b6b6b6]" />
-      React
-    </span>
-    <span className="flex items-center gap-1">
-      <SiTailwindcss size={16} className="text-[#b6b6b6]" />
-      Tailwind
-    </span>
-    <span className="flex items-center gap-1">
-      <SiVercel size={16} className="text-[#b6b6b6]" />
-      Vercel
-    </span>
-  </div>
-</footer>
+      <footer
+        className="w-full flex flex-col items-center gap-2 pb-3"
+        aria-label="Informations légales et technologies utilisées"
+      >
+        {/* Footer infos équipe */}
+        <div className="bg-[#483a7c]/90 rounded-xl px-4 py-2 text-xs text-white text-center shadow">
+          Made with <span className="text-pink-400">💗</span> by Team #165
+          <br />
+          © 2025 Amel, Nico, Sami, Sofiane, Stéphane
+          <br />
+          <address className="not-italic inline">
+            <a
+              href="mailto:contact@mooveit.ovh"
+              className="underline hover:text-blue-400"
+            >
+              contact@mooveit.ovh
+            </a>
+          </address>
+        </div>
+        {/* Footer technos */}
+        <div className="bg-[#332961]/90 rounded-xl px-4 py-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-[#b6b6b6] shadow mt-6">
+          <span className="flex items-center gap-1">
+            <SiNextdotjs size={16} className="text-[#b6b6b6]" />
+            Next.js
+          </span>
+          <span className="flex items-center gap-1">
+            <SiTypescript size={16} className="text-[#b6b6b6]" />
+            TypeScript
+          </span>
+          <span className="flex items-center gap-1">
+            <SiReact size={16} className="text-[#b6b6b6]" />
+            React
+          </span>
+          <span className="flex items-center gap-1">
+            <SiTailwindcss size={16} className="text-[#b6b6b6]" />
+            Tailwind
+          </span>
+          <span className="flex items-center gap-1">
+            <SiVercel size={16} className="text-[#b6b6b6]" />
+            Vercel
+          </span>
+        </div>
+      </footer>
     </main>
   )
 }
