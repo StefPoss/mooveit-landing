@@ -11,21 +11,21 @@ export default function Home() {
           alt="MooveIt Logo"
           width={88}
           height={88}
-          className="mb-4"
+          className="mb-4 mt-8"
           priority
         />
 
-        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden my-2 mt-8">
+        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden my-2">
           <video
             src="/video-splash.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover mt"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-2 rounded-2xl">
-            <h2 className="text-white text-2xl font-bold mb-2 text-center leading-tight drop-shadow mb-8">
+            <h2 className="text-white text-2xl font-bold text-center leading-tight drop-shadow mb-8">
               Bienvenue dans <span className="text-[#a291e7]">MOOVE IT,</span>
               <br />
               ton coach de poche&nbsp;!
@@ -59,7 +59,7 @@ export default function Home() {
     </a>
   </div>
   {/* Footer technos */}
-  <div className="bg-[#332961]/90 rounded-xl px-4 py-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-[#b6b6b6] shadow">
+  <div className="bg-[#332961]/90 rounded-xl px-4 py-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-[#b6b6b6] shadow mt-6">
     <span className="flex items-center gap-1">
       <SiNextdotjs size={16} className="text-[#b6b6b6]" />
       Next.js
