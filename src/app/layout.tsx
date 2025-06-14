@@ -1,4 +1,3 @@
-import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 
@@ -12,7 +11,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
-// Pour Next 13+/app dir :
 export const metadata = {
   title: "MooveIt – Ton coach de poche",
   description:
@@ -26,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} className="bg-[#614bb0] antialiased flex flex-col min-h-screen`}
       >
         {children}
       </body>
